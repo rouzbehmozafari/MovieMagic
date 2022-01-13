@@ -2,8 +2,14 @@
     <div class="top">
         <ul class="top">
             <li><a class="logo" href="/">MOVIEMAGIC</a></li>
-            <li><input id="input" class="search" type="text"></li>
-            <li class="searchButt" onclick="search()">Search</li>
+            <form action="/search" method="POST">
+                
+                    <input name="field" id="input" class="search" type="text">
+                    <input type="submit" class="searchButt" value="Search">
+                
+            </form>
+
+            <!-- <a href="/search" class="searchButt" onclick="search()">Search</a> -->
         </ul>
     </div>
     <div class="filter">
