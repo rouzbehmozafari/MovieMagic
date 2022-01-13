@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap");
+/* Rout elements */
+/* General Styles */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  /* max-width: 1440px; */
+  /* overflow: hidden; */
+  background-color: #333333;
+}
+
+a {
+  color: white;
+}
+
+/* Header */
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  width: 70%;
+  margin: auto auto;
+}
+
+.top {
+  background-color: #4F4F4F;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.search, .searchButt {
+  border-radius: 20px;
+  height: 40px;
+  text-align: center;
+}
+
+.searchButt {
+  color: gray;
+  background-color: white;
+  width: 100px;
+}
+
+.searchButt:hover {
+  cursor: pointer;
+}
+
+.search {
+  width: 250px;
+  background-color: #333333;
+}
+
+.filter li {
+  border-radius: 20px;
+  border: white 1px solid;
+  padding: 10px 20px;
+  color: white;
+}
+
+.filter li:hover {
+  cursor: pointer;
+}
+
+/* Main */
+.cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards img {
+  width: 100%;
+}
+
+.cards .card {
+  padding: 10%;
+}
+
+.cards .card p {
+  color: white;
+}
+
+.cards .card:hover {
+  cursor: pointer;
+}
+
+/* Footer */
+/* Media */
+/*# sourceMappingURL=style.css.map */
