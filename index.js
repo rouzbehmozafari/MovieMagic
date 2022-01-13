@@ -14,6 +14,14 @@ app.use((req,res,next)=>{
     console.log(req.url)
     next()
 })
+
+// search Box
+let input = document.getElementById('input')
+function search(){
+    input = input.value()
+    
+}
+
 app.get('/:pageNum',(req,res)=>{
     let pageNum = req.params.pageNum
     axios(`https://api.themoviedb.org/3/discover/movie?api_key=d238de702d59ca703cdf0a8481a4a805&page=${pageNum}`)
